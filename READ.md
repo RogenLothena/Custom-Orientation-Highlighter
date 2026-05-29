@@ -3,9 +3,12 @@
 Highlights selected faces and edges with custom colors based on their transform orientations to prevent mesh confusion during complex modeling tasks.
 
 <p align="center">
-  <img src="preview1.gif" alt="Önizleme 1" width="45%" />
   <img src="preview2.gif" alt="Önizleme 2" width="45%" />
 </p>
+<p align="center">
+    <img src="preview2.gif" alt="Önizleme 2" width="45%" />
+</p>
+
 ## 🚨 CRITICAL USAGE NOTE
 
 > [!CAUTION]
