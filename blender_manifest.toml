@@ -1,5 +1,5 @@
 schema_version = "1.0.0"
-id = "custom_orientation_axis"
+id = "custom_orientation_highlighter"
 version = "7.1.1"
 name = "Custom Orientation Axis"
 tagline = "Custom orientation axis and management tool"
