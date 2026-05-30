@@ -1,21 +1,21 @@
 schema_version = "1.0.0"
-id = "custom_orientation_highlighter"
-version = "2.5.2"
-name = "Custom Orientation Highlighter"
-tagline = "Highlights selected faces and edges with custom colors based on their transform orientations."
+id = "custom_orientation_axis"
+version = "7.1.1"
+name = "Custom Orientation Axis"
+tagline = "Custom orientation axis and management tool"
 maintainer = "Antigravity AI & RogenLothena"
 type = "add-on"
 
 blender_version_min = "4.2.0"
 
-description = """Ensure you are in Edit Mode to create colors properly.
+license = ["SPDX:GPL-3.0-or-later"]
 
-To keep custom colors persistent, hide registered objects instead of deleting them; recreating objects resets the color index loop.
+website = "https://github.com/RogenLothena/Custom-Orientation-Highlighter"
 
-Important Note on Object Deletion: When you delete registered objects from the scene and create new ones, the color index loop resets. To maintain your custom orientation colors and prevent newly created objects from overriding existing color assignments, hide your registered objects instead of deleting them. This ensures the color database remains consistent.
+tags = ["3D View", "Modeling"]
 
-You can also prevent this error by hiding the first colored object you create, but this isn't a guaranteed solution, the issue may still occur with other objects."""
+description = """
+Generates persistent, bone-style XYZ axes on selected faces or edges to easily visualize your custom transform orientations.
 
-license = [
-    "SPDX:GPL-3.0-or-later",
-]
+Usage Note: Ensure you are in Edit Mode with at least one face or edge selected to create a new axis.
+"""

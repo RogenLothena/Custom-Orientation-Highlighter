@@ -1,27 +1,31 @@
-# Custom Orientation Highlighter
+# Custom Orientation Axis
 
-Highlights selected faces and edges with custom colors based on their transform orientations to prevent mesh confusion during complex modeling tasks.
+A Blender add-on that creates visible, bone-style XYZ axes on selected faces or edges, making it easy to visualize and manage your custom transform orientations during 3D modeling.
+
+## ✨ Features
+
+* **Visual Axis Display:** Draws clear X (Red), Y (Green), and Z (Blue) orientation lines directly on your mesh, similar to Blender's armature display.
+* **Native Sync:** Automatically integrates and syncs with Blender's built-in transform orientation system.
+* **Depth Awareness & In-Front Toggle:** Axes naturally hide behind geometry for a clean viewport. You can easily toggle "In-Front" mode to see specific axes through solid meshes.
+* **Smart Labelling:** Text labels automatically offset themselves to prevent visual clutter and overlap with Blender's native UI.
+* **One-Click Cleanup:** Safely remove all custom axes and purge your orientation list instantly with the "Clear System" button.
 
 <p align="center">
-	<img src="preview1.gif" alt="gifpreview 1" width="45%" />
-	<img src="preview2.gif" alt="gifpreview 2" width="45%" />
+  <img src="coa_preview.png" alt="Custom Orientation Axis Preview" width="800">
 </p>
 
-## 🚨 CRITICAL USAGE NOTE
+## 🚀 How to Use
 
-> [!CAUTION]
-> ### Ensure you are in Edit Mode to create colors properly.
-> To keep custom colors persistent, **hide registered objects instead of deleting them**; recreating objects resets the color index loop.
+1. Enter **Edit Mode** in the 3D Viewport.
+2. Select at least one face or edge that you want to base your orientation on.
+3. Open the Sidebar (press `N`) and navigate to the **Custom Orientations** tab.
+4. Click **Add Axis** to generate your new orientation.
 
-> [!WARNING]
-> **Important Note on Object Deletion:**  
-> When you delete registered objects from the scene and create new ones, the color index loop resets. To maintain your custom orientation colors and prevent newly created objects from overriding existing color assignments, hide your registered objects instead of deleting them. This ensures the color database remains consistent.
->
-> You can also prevent this error by hiding the first colored object you create, but this isn’t a guaranteed solution; the issue may still occur with other objects.
+> **Tip:** Use the Active Axes list in the panel to rename your orientations, toggle their In-Front visibility, or delete them individually.
 
 ## 🛠️ Installation
 
 1. Download the repository as a `.zip` file.
-2. In Blender, go to `Edit > Preferences > Extensions`.
-3. Click the arrow icon in the top right and select **Install from Disk**.
-4. Choose the downloaded `.zip` file.
+2. In Blender (requires version 4.2 or higher), go to `Edit > Preferences > Extensions`.
+3. Click the down-arrow icon in the top right corner and select **Install from Disk...**
+4. Select the downloaded `.zip` file and enable the add-on.
